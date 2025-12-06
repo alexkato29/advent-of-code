@@ -11,7 +11,7 @@ res: int = 0
 for i in instructions:
     dist: int = int(i[1:])
     if i[0] == "L":
-        inc = (-1 * (pos - OPTIONS - dist)) // OPTIONS
+        inc = -(pos - OPTIONS - dist) // OPTIONS
         if pos == 0:  # Avoid double counting when we started at 0
             inc -= 1
         res += inc
