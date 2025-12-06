@@ -16,24 +16,19 @@ for r in range(len(grid)):
 dim = (len(grid[0]), len(grid))
 
 res = 0
-diff = 0
-while diff != 0 or res == 0:
-	diff = 0
-	for r in range(len(grid)):
-		for c in range(len(grid[r])):
-			if grid[r][c] != "@":
-				continue
+for r in range(len(grid)):
+	for c in range(len(grid[r])):
+		if grid[r][c] != "@":
+			continue
 
-			count = 0
-			for x, y in DIRECTIONS:
-				new_r = r + x
-				new_c = c + y
-				if in_bounds(new_r, new_c, dim) and grid[new_r][new_c] == "@":
-					count += 1
+		count = 0
+		for x, y in DIRECTIONS:
+			new_r = r + x
+			new_c = c + y
+			if in_bounds(new_r, new_c, dim) and grid[new_r][new_c] == "@":
+				count += 1
 
-			if count < 4: 
-				res += 1
-				diff += 1
-				grid[r][c] = "."
+		if count < 4: 
+			res += 1
 
 print(res)
