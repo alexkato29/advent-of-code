@@ -1,4 +1,4 @@
-from utils.puzzle_input import get_input, split_lines
+from utils.puzzle_input import get_input
 
 
 puzzle_input = get_input(year=2025, day=3)

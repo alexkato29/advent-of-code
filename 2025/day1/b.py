@@ -1,9 +1,9 @@
-from utils.puzzle_input import get_dummy_input, get_input, split_lines
+from utils.puzzle_input import get_input
 
 
 OPTIONS = 100
 puzzle_input: str = get_input(year=2025, day=1)
-instructions: list[str] = split_lines(puzzle_input)
+instructions: list[str] = puzzle_input.splitlines()
 
 pos: int = 50
 res: int = 0

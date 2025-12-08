@@ -1,6 +1,6 @@
 from typing import Tuple
 
-from utils.puzzle_input import get_dummy_input, get_input, split_lines
+from utils.puzzle_input import get_dummy_input, get_input
 
 
 DIRECTIONS = [(-1, -1), (0, -1), (1, -1), (-1, 0), (1, 0), (-1, 1), (0, 1), (1, 1)]  # No (0, 0)

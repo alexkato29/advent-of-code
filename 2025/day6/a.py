@@ -1,4 +1,4 @@
-from utils.puzzle_input import get_dummy_input, get_input, split_lines
+from utils.puzzle_input import get_dummy_input, get_input
 
 
 #puzzle_input = get_dummy_input()

@@ -16,7 +16,3 @@ def get_input(year: int, day: int) -> str:
 
 	r: Response = get(url=url, cookies=cookies)
 	return r.text.strip()
-
-
-def split_lines(puzzle_input: str) -> list[str]:
-	return puzzle_input.split("\n")
