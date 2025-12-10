@@ -14,7 +14,6 @@ for point in raw_points:
 
 # To work with the massive coordinate system this rescales the points.
 # Every point is at most a distance of 1 from each other.
-# One pass to collect unique values
 unique_x = sorted(set(x_vals))
 unique_y = sorted(set(y_vals))
 x_map = {x: i for i, x in enumerate(unique_x)}
