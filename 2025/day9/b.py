@@ -101,7 +101,7 @@ for i in range(len(compressed_points)):
 		cx1, cx2 = x_map[min_x], x_map[max_x]
         
 		x_count = (prefix[cy2 + 1][cx2 + 1] - prefix[cy1][cx2 + 1] 
-           - prefix[cy2 + 1][cx1] + prefix[cy1][cx1])
+			- prefix[cy2 + 1][cx1] + prefix[cy1][cx1])
         
 		if x_count == 0:
 			res = max(res, area)
